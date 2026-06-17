@@ -1,0 +1,123 @@
+{
+  "model": "linear",
+  "scenario": {
+    "example": "exm1",
+    "source_setup": "exm1_6source_shift",
+    "which_Exm": 1,
+    "data_which_Exm": 1,
+    "p": 5,
+    "n0": 250,
+    "N": 5000,
+    "source_h_mu": null,
+    "source_h_sigma": null
+  },
+  "algorithm": {
+    "selection": "unified MST/MDSP intersection rule",
+    "z_band": "not used",
+    "options": {
+      "tolerance": 0.005,
+      "max_iter": 2000,
+      "x_distribution": "single_gaussian",
+      "intercept_from_supervised": true,
+      "bias_correction": false,
+      "beta_star_tolerance": null,
+      "beta_star_max_iter": null
+    }
+  },
+  "beta_star": [
+    5.995750586320205,
+    1.0208522023416133,
+    1.002692455522054,
+    1.0443815810939177,
+    0.9244636842101709,
+    1.0223309648667773
+  ],
+  "all_fields": [
+    "m1s1",
+    "m2s2",
+    "m3s3",
+    "m4s4",
+    "m5s5",
+    "m6s6"
+  ],
+  "h_mu": [
+    "-0.01",
+    "0.01",
+    "-0.5",
+    "0.5",
+    "-1.0",
+    "1.0"
+  ],
+  "h_sigma": [
+    "0.01",
+    "0.01",
+    "0.5",
+    "0.5",
+    "1.0",
+    "1.0"
+  ],
+  "proposed_selection_counts": {
+    "m1s1": 389,
+    "m2s2": 389,
+    "m3s3": 14,
+    "m4s4": 11
+  },
+  "select_times_proposed": [
+    [
+      396.0,
+      398.0,
+      15.0,
+      12.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "timing_seconds": {
+    "selection_total": 364.6125435419963,
+    "supervised_total": 0.04074191700783558,
+    "dress_total": 0.9648290409968467,
+    "pss_total": 0.9297084159916267,
+    "proposed_estimation_total": 0.6475858750054613,
+    "elapsed_total": 368.34756422042847
+  }
+}
