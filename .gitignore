@@ -1,32 +1,33 @@
-# macOS / IDE / Python cache
+# macOS, IDE, and Python cache files
 .DS_Store
 .idea/
 __pycache__/
 *.py[cod]
 
-# Simulation and real-data outputs
-数值模拟/模拟结果/**
-实际数据分析/分析结果/**
-
-# Raw or derived gait-video data should not be committed.
+# Raw gait-video files and large private data files
 data/
 数据/
 真实数据/
-加密数据/
+原始数据/
 *.mp4
 *.mov
 *.avi
 *.mkv
-*.csv
-*.xlsx
-*.xls
 *.pkl
 *.npy
 *.npz
 *.mat
+*.xlsx
+*.xls
 
-# Keep source code files even when file names contain Chinese characters.
-!README.md
-!*.py
-!*.tex
-!*.md
+# Real-data outputs are private unless they are explicitly encrypted.
+实际数据分析/分析结果/**
+!实际数据分析/分析结果/
+!实际数据分析/分析结果/README.md
+!实际数据分析/分析结果/加密表格/
+!实际数据分析/分析结果/加密表格/*.enc
+
+# Simulation outputs are allowed because they do not contain individual-level data.
+!数值模拟/模拟结果/
+!数值模拟/模拟结果/**
+
