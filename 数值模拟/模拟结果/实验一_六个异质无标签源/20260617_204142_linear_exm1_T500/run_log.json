@@ -1,0 +1,17 @@
+[
+  {
+    "scenario": {
+      "example": "exm1",
+      "source_setup": "exm1_6source_shift",
+      "which_Exm": 1,
+      "data_which_Exm": 1,
+      "p": 5,
+      "n0": 250,
+      "N": 5000,
+      "source_h_mu": null,
+      "source_h_sigma": null
+    },
+    "status": "ok",
+    "elapsed_sec": 368.3554050922394
+  }
+]
